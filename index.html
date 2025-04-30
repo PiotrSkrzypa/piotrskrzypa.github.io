@@ -130,22 +130,12 @@
 
           <div class="col-md-6">
             <div class="about-me">
-              <h4>About me</h4>
-              <p>
+              <h4 data-key="about">About me</h4>
+              <p data-key="aboutDescription">
                 Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
                 imperdiet et, porttitor
                 at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
                 porttitor accumsan tincidunt.
-              </p>
-              <p>
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                porttitor volutpat. Vestibulum
-                ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-              </p>
-              <p>
-                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                Nulla porttitor accumsan
-                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
               </p>
             </div>
           </div>
@@ -417,8 +407,7 @@
 
           </div>
         </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <form action="https://formsubmit.co/skrzypapiotr144@gmail.com" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -436,13 +425,14 @@
             <div class="col-md-12">
               <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
             </div>
+             <input type="hidden" name="_captcha" value="false">
 
             <div class="col-md-12 text-center">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
 
-              <button type="submit">Send Message</button>
+              <button type="submit" value="Send Message">Send Message</button>
             </div>
 
           </div>
