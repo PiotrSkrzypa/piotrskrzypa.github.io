@@ -251,11 +251,12 @@
 
   const translations = {
     en: {
-      about: "About",
+      about: "About me",
       resume: "Resume",
       portfolio: "Portfolio",
       contact: "Contact",
       phone: "Phone",
+      aboutDescription: "I have been creating games with Unity for 8 years, including over 6 years professionally. I have worked on productions for mobile platforms, PC, VR and consoles. I have participated in the full cycle of game development - from architecture design, through implementation of mechanics and user interface, to debugging and optimization. I also have experience in managing teams of programmers and creating development tools."
       // Add more keys...
     },
     pl: {
@@ -264,6 +265,7 @@
       portfolio: "Portfolio",
       contact: "Kontakt",
       phone: "Telefon",
+      aboutDescription: "Od 8 lat tworzę gry z pomocą Unity, z czego ponad 6 lat zawodowo. Pracowałem nad produkcjami na platformy mobilne, PC, VR i konsole. Brałem udział w pełnym cyklu rozwoju gier — od projektowania architektury, przez implementację mechanik i interfejsu użytkownika, po debugowanie i optymalizację. Mam także doświadczenie w zarządzaniu zespołami programistówi tworzeniu narzędzi deweloperskich."
       // Add more keys...
     }
   };
