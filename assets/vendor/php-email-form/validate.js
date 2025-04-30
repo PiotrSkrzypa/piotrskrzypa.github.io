@@ -8,7 +8,7 @@
 
   let forms = document.querySelectorAll('.php-email-form');
 
-  forms.forEach( function(e) {
+  /*forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
       event.preventDefault();
 
@@ -46,7 +46,7 @@
       } else {
         php_email_form_submit(thisForm, action, formData);
       }
-    });
+    });*/
   });
 
   function php_email_form_submit(thisForm, action, formData) {
