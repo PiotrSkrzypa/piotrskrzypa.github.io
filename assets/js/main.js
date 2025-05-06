@@ -245,59 +245,57 @@
       }
     })
   }
+  function initPortfolioIsotope(container) 
+  {
+    if (!container) return;
 
-  
-  window.setLanguage = function(lang)  {
-
-  const translations = {
-    en: {
-      about: "About me",
-      resume: "Resume",
-      portfolio: "Portfolio",
-      contact: "Contact",
-      phone: "Phone",
-      aboutDescription: "I have been creating games with Unity for 8 years, including over 6 years professionally. I have worked on productions for mobile platforms, PC, VR and consoles. I have participated in the full cycle of game development - from architecture design, through implementation of mechanics and user interface, to debugging and optimization. I also have experience in managing teams of programmers and creating development tools."
-      // Add more keys...
-    },
-    pl: {
-      about: "O mnie",
-      resume: "Doświadczenie",
-      portfolio: "Portfolio",
-      contact: "Kontakt",
-      phone: "Telefon",
-      aboutDescription: "Od 8 lat tworzę gry z pomocą Unity, z czego ponad 6 lat zawodowo. Pracowałem nad produkcjami na platformy mobilne, PC, VR i konsole. Brałem udział w pełnym cyklu rozwoju gier — od projektowania architektury, przez implementację mechanik i interfejsu użytkownika, po debugowanie i optymalizację. Mam także doświadczenie w zarządzaniu zespołami programistówi tworzeniu narzędzi deweloperskich."
-      // Add more keys...
-    }
-  };
-  const flagMap = {
-    en: {
-      src: "https://flagcdn.com/w20/gb.png",
-      srcset: "https://flagcdn.com/w40/gb.png 2x",
-      label: "English"
-    },
-    pl: {
-      src: "https://flagcdn.com/w20/pl.png",
-      srcset: "https://flagcdn.com/w40/pl.png 2x",
-      label: "Polski"
-    }
-  };
-  const selected = flagMap[lang];
-  const flagImg = document.getElementById("selected-lang-flag");
-  flagImg.src = selected.src;
-  flagImg.srcset = selected.srcset;
-  document.getElementById("selected-lang-text").textContent = selected.label;
-
-  // Optional: trigger translations
-  document.querySelectorAll('[data-key]').forEach(el => {
-    const key = el.getAttribute('data-key');
-    el.textContent = translations[lang][key] || key;
+    imagesLoaded(container, function () {
+    const iso = new Isotope(container, {
+      itemSelector: '.portfolio-item',
+      layoutMode: 'masonry'
+    });
+    iso.arrange();
   });
-
-  localStorage.setItem("preferredLanguage", lang);
 }
+  function fillPortfolioContainer()
+  {
+    const container = document.querySelector(".isotope-container");
+    if (!container || !window.projectsData) return;
 
-// Load language on page load
+    for (const [id, project] of Object.entries(window.projectsData)) {
+      const div = document.createElement("div");
+      div.className = "col-lg-4 col-md-6 portfolio-item isotope-item filter-app";
+
+      const firstImage = project.slides.find(s => s.type === "image")?.src || "assets/img/placeholder.jpg";
+
+      div.innerHTML = `
+            <img src="${project.logo}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>${project.title}</h4>
+                <p data-key="${id}shortDescription"></p>
+                <a href="portfolio-details.html?id=${id}" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+              </div>
+      `;
+
+      container.appendChild(div);
+    }
+    initPortfolioIsotope(container);
+
+  }
+  
+// Load language and project data on page load
 document.addEventListener("DOMContentLoaded", () => {
+
+  fillPortfolioContainer();
+  const projectId = new URLSearchParams(window.location.search).get("id");
+  if (projectId) 
+  {
+    const data = window.projectsData[projectId];
+    if (data && typeof window.loadPortfolioDetails === "function") 
+    {
+        window.loadPortfolioDetails(data, projectId);
+    }
+  }
   const savedLang = localStorage.getItem("preferredLanguage") || "en";
   let langToUse = "en";
 
@@ -312,7 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     localStorage.setItem("preferredLanguage", langToUse);
   }
-  setLanguage(langToUse);
+  window.setLanguage(langToUse);
   });
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
