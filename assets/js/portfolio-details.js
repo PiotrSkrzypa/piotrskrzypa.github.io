@@ -8,9 +8,22 @@ if (!window.youtubeApiLoaded)
   document.head.appendChild(tag);
   window.youtubeApiLoaded = true;
 }
-
 window.projectsData = 
 {
+    project3: 
+    {
+      title: "8 Minute Empire",
+      logo : "assets/img/portfolio/8MinuteEmpire/Logo.jpg",
+      url: "https://www.nintendo.com/us/store/products/eight-minute-empire-complete-edition-switch/",
+      platform: "Nintendo Switch",
+      genre: "turnBasedStrategy",
+      slides: [
+        { type: "video", src: "https://www.youtube.com/embed/fi9aOuyH9sA?enablejsapi=1" },
+        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_3.jpg" },
+        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_1.jpg" },
+        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_2.jpg" },
+      ]
+    },
     project1: 
     {
       title: "Clash II",
@@ -27,12 +40,28 @@ window.projectsData =
         { type: "image", src: "assets/img/portfolio/Clash/Screenshot_5.jpg" }
       ]
     },
+    project4: 
+    {
+      title: "Caveman Chuck",
+      logo : "assets/img/portfolio/CavemanChuck/Logo.jpg",
+      url: "https://www.nintendo.com/us/store/products/caveman-chuck-prehistoric-adventure-switch/",
+      platform: "Nintendo Switch",
+      genre: "platformer2d",
+      slides: [
+        { type: "video", src: "https://www.youtube.com/embed/lQE1fZz_yhA?enablejsapi=1" },
+        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_1.jpg" },
+        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_2.jpg" },
+        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_3.jpg" },
+        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_4.jpg" }
+      ]
+    },
     project2: 
     {
       title: "Ski Jump Challenge",
       logo : "assets/img/portfolio/SkiJumpChallenge/Logo.jpg",
       url: "https://play.google.com/store/apps/details?id=com.simplicity.ski_jump_challenge",
       platform: "Android, iOS",
+      genre: "sport",
       slides: [
         { type: "image", src: "assets/img/portfolio/SkiJumpChallenge/Screenshot_1.jpg" },
         { type: "image", src: "assets/img/portfolio/SkiJumpChallenge/Screenshot_2.jpg" },
@@ -40,16 +69,33 @@ window.projectsData =
         { type: "image", src: "assets/img/portfolio/SkiJumpChallenge/Screenshot_4.jpg" }
       ]
     },
-    project3: 
+     project6: 
     {
-      title: "8 Minute Empire",
-      logo : "assets/img/portfolio/8MinuteEmpire/Logo.jpg",
-      url: "https://play.google.com/store/apps/details?id=com.simplicity.ski_jump_challenge",
-      platform: "Nintendo Switch",
+      title: "Inside Grass",
+      logo : "assets/img/portfolio/InsideGrass/Logo.jpg",
+      url: "https://play.google.com/store/apps/details?id=com.primebitgames.insidegrass",
+      platform: "Androi, iOS",
+      genre: "adventure",
       slides: [
-        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_3.jpg" },
-        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_1.jpg" },
-        { type: "image", src: "assets/img/portfolio/8MinuteEmpire/Screenshot_2.jpg" },
+        { type: "video", src: "https://www.youtube.com/embed/CjSrx5zOdoY?enablejsapi=1" },
+        { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_1.jpg" },
+        { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_2.jpg" },
+        { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_3.jpg" },
+        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_4.jpg" }
+      ]
+    },
+    project5: 
+    {
+      title: "Dark Tower",
+      logo : "assets/img/portfolio/DarkTower/Logo.jpg",
+      url: "https://www.nintendo.com/us/store/products/dark-tower-rpg-dungeon-puzzle-switch/",
+      platform: "Nintendo Switch",
+      genre: "puzzleRPG",
+      slides: [
+        { type: "video", src: "https://www.youtube.com/embed/CjSrx5zOdoY?enablejsapi=1" },
+        { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_1.jpg" },
+        { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_2.jpg" },
+        { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_3.jpg" }
       ]
     }
     // Add more projects as needed...

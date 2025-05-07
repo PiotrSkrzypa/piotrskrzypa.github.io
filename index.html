@@ -53,6 +53,7 @@
           <li><a href="#resume" data-key="resume">Resume</a></li>
           <li><a href="#portfolio" data-key="portfolio">Portfolio</a></li>
           <li><a href="#contact" data-key="contact">Contact</a></li>
+          <li><a id="cvPDF" data-key="cv" data-use-HTML="true" href="assets/PiotrSkrzypa_CV.pdf" download><i class="bi bi-download"></i>CV</a></li>
           <li class="dropdown" id="langDropdown"><a href="#"><img id="selected-lang-flag" src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" class="me-2">
           <span id="selected-lang-text">English</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -90,42 +91,7 @@
                 <p><strong>Senior Unity Developer</strong></p>
                 <p><strong>Email: </strong> <span><a href="mailto:skrzypapiotr144@gmail.com">skrzypapiotr144@gmail.com</a></span></p>
                 <p><strong data-key="phone">Phone</strong><strong>:</strong><span> (+48) 723 497 731</span></p>
-                <p><a href="assets/PiotrSkrzypa_CV.pdf" target="_blank">CV</a></p>
               </div>
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
             </div>
           </div>
 
@@ -141,6 +107,40 @@
             </div>
           </div>
         </div>
+        <div class="row gy-4">
+            
+                <div class="card border-0 ">
+                    <div class="card-body ">
+                        <div class="mb-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"></div>
+                                <h5 class="fw-bolder mb-0"><span class="text-gradient d-inline" data-key="skills">Skills</span></h5>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-3">
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2  p-3 h-100">Unity</div></div>
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">C#</div></div>
+                                <div class="col"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">Visual Studio</div></div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-3">
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">Git</div></div>
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">Addressables</div></div>
+                                <div class="col"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">Shader Graph</div></div>
+                            </div>
+                             <div class="row row-cols-1 row-cols-md-3 mb-3">
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">VFX Graph</div></div>
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">UniTask</div></div>
+                                <div class="col"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">UniRx / R3</div></div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-3">
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100">Odin Inspector</div></div>
+                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100" data-key="porting">Portowanie na konsole</div></div>
+                                <div class="col"><div class="d-flex align-items-center bg-light border border-light-subtle rounded-2 p-3 h-100" data-key="teamwork">Praca w zespole</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
 
       </div>
 
@@ -151,37 +151,18 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
+        <h2 data-key="resume">Resume</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            
-            <h3 class="resume-title" data-key="education">Education</h3>
-            <div class="resume-item">
-              <h4>Informatyka, studia II stopnia</h4>
-              <h5>2018 - 2019</h5>
-              <p><em>Politechnika Rzeszowska im. Ignacego Łukasiewicza</em></p>
-              <p>Praca magisterska pt. : „ Algorytmy sztucznej inteligencji rozwiązujące problem najkrótszej ścieżki”, ocena z pracy: 5</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Informatyka, studia I stopnia</h4>
-              <h5>2014 - 2018</h5>
-              <p><em>Politechnika Rzeszowska im. Ignacego Łukasiewicza</em></p>
-              <p>Praca inżynierska pt. :  „Zastosowanie algorytmów sztucznej inteligencji w grze komputerowej”, ocena z pracy: 5</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Doświadczenie zawodowe</h3>
-            <div class="resume-item">
+            <h3 class="resume-title" data-key="proffesionalExperience">Doświadczenie zawodowe</h3>
+            <div class="resume-item" data-key="primebit" data-use-HTML="true">
               <h4>Senior Unity Developer</h4>
-              <h5>2019 - Present</h5>
+              <h5>2019 - 2025</h5>
               <p><em>PrimeBit Games</em></p>
               <ul>
                 <li>Prowadzenie zespołu programistów</li>
@@ -193,7 +174,7 @@
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <div class="resume-item">
+            <div class="resume-item" data-key="simplicity" data-use-HTML="true">
               <h4>Unity Developer, Internship</h4>
               <h5>2017 - 2018</h5>
               <p><em>Simplicity Games</em></p>
@@ -204,6 +185,25 @@
             </div><!-- Edn Resume Item -->
 
           </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="resume-title" data-key="education">Education</h3>
+            <div class="resume-item" data-key="master" data-use-HTML="true">
+              <h4>Informatyka, studia II stopnia</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>Politechnika Rzeszowska im. Ignacego Łukasiewicza</em></p>
+              <ul><li><p>Praca magisterska pt. : „ Algorytmy sztucznej inteligencji rozwiązujące problem najkrótszej ścieżki”, ocena z pracy: 5</p></li></ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item" data-key="bachelor" data-use-HTML="true">
+              <h4>Informatyka, studia I stopnia</h4>
+              <h5>2014 - 2018</h5>
+              <p><em>Politechnika Rzeszowska im. Ignacego Łukasiewicza</em></p>
+              <ul><li><p>Praca inżynierska pt. :  „Zastosowanie algorytmów sztucznej inteligencji w grze komputerowej”, ocena z pracy: 5</p></li></ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
 
         </div>
 
@@ -217,7 +217,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -248,48 +247,36 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <div class="container section-title" data-aos="fade-up" style="padding-bottom: 10px;">
+        <h2 data-key="contact">Contact</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
+          <div class="row gy-5" >
+            <div class="col">
+              <div class="info-item d-flex align-items-center justify-content-center">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3 data-key="phone">Call Us</h3>
+                  <p>(+48) 723 497 731</p>
                 </div>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
+            <div class="col">
+              <div class="info-item d-flex align-items-center justify-content-center">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
+                  <h3>Email</h3>
                   <p><a href="mailto:skrzypapiotr144@gmail.com">skrzypapiotr144@gmail.com</a></p>
                 </div>
               </div>
             </div><!-- End Info Item -->
-
           </div>
         </div>
+        <!-- Uncomment if you want to use the contact form
         <form action="https://formsubmit.co/96e42db8957ce68d40e0bf6fb8a66595" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
@@ -320,7 +307,8 @@
             </div>
 
           </div>
-        </form><!-- End Contact Form -->
+        </form>
+        -->
 
       </div>
 
