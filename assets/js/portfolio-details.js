@@ -136,22 +136,6 @@ window.loadPortfolioDetails = function(projectData, id)
 
   const swiperWrapper = document.querySelector(".portfolio-details-slider .swiper-wrapper");
   if (!swiperWrapper) return;
-
-  window.projectSwiper = new Swiper(".portfolio-details-slider", {
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
   swiperWrapper.innerHTML = "";
   window.youtubePlayers = [];
 
@@ -174,12 +158,53 @@ window.loadPortfolioDetails = function(projectData, id)
             src="${slide.src}"
             title="YouTube video"
             allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            rel="noreferrer">
           </iframe>
         </div>`;
     }
     swiperWrapper.appendChild(slideEl);
   });
+
+
+  window.projectSwiper = new Swiper(".portfolio-details-slider", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  slidesPerView: 1,
+  loop: true,
+  loopedSlides: projectData.slides.length, 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+    renderBullet: function (index, className) 
+    {
+        return `<span class="custom-bullet ${className}" data-index="${index}"></span>`;
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  on: 
+  {
+    slideChange: function () 
+    {
+        //console.log("Slide changed to: " + this.activeIndex);
+        const bullets = document.querySelectorAll('.custom-bullet');
+        bullets.forEach(bullet => bullet.classList.remove('swiper-pagination-bullet-active'));
+        const activeBullet = document.querySelector(`.custom-bullet[data-index="${this.realIndex}"]`);
+        if (activeBullet) 
+        {
+          activeBullet.classList.add('swiper-pagination-bullet-active');
+        }
+    }
+  }
+});
+
 
   if (window.projectSwiper) 
   {

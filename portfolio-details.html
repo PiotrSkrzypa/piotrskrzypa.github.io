@@ -38,21 +38,22 @@
 
 <body class="portfolio-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/favicon.png" alt="">
         <h1 class="sitename">Piotr Skrzypa</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#about" data-key="about">About</a></li>
-          <li><a href="index.html#resume" data-key="resume">Resume</a></li>
-          <li><a href="index.html#portfolio" data-key="portfolio" class="active">Portfolio</a></li>
-          <li><a href="index.html#contact" data-key="contact">Contact</a></li>
+          <li><a href="#about" data-key="about">About</a></li>
+          <li><a href="#resume" data-key="resume">Resume</a></li>
+          <li><a href="#portfolio" data-key="portfolio" class="active">Portfolio</a></li>
+          <li><a href="#contact" data-key="contact">Contact</a></li>
+          <li><a id="cvPDF" data-key="cv" data-use-HTML="true" href="assets/PiotrSkrzypa_CV.pdf" download><i class="bi bi-download"></i>CV</a></li>
           <li class="dropdown" id="langDropdown"><a href="#"><img id="selected-lang-flag" src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" class="me-2">
           <span id="selected-lang-text">English</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
