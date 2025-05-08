@@ -52,10 +52,20 @@ I also have experience in managing teams of programmers and creating development
       projectInformation: "Project information",
       project1shortDescription: "Turn-based strategy inspired by HoMM",
       project1Description: "<h2>The largest professional project</h2>\
-<p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. \
-Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. \
-Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. \
-Sequi nulla at esse enim cum deserunt eius.</p>",
+<p>Clash 2 has been the largest project I have had the opportunity to work on so far. \
+In the project, I served as the lead developer, responsible for designing the overall game architecture.</p>\
+I developed a map editor for the design team, along with a terrain shader created using Shader Graph. \
+I optimized memory usage using Profiler and Memory Profiler tools, and implemented efficient asset loading with the Addressables system.</p>\
+<p>I designed a unit management system based on the Command pattern and a unit abilities system using the Flyweight pattern. \
+Additionally, I created a UI window management system with animations, utilizing the DOTween library.</p>",
+      project2shortDescription: "Mobile ski jump game",
+      project2Description: "<h2>The largest professional project</h2>\
+<p>Clash 2 has been the largest project I have had the opportunity to work on so far. \
+In the project, I served as the lead developer, responsible for designing the overall game architecture.</p>\
+I developed a map editor for the design team, along with a terrain shader created using Shader Graph. \
+I optimized memory usage using Profiler and Memory Profiler tools, and implemented efficient asset loading with the Addressables system.</p>\
+<p>I designed a unit management system based on the Command pattern and a unit abilities system using the Flyweight pattern. \
+Additionally, I created a UI window management system with animations, utilizing the DOTween library.</p>",
       // Add more keys...
     },
     pl: {
@@ -112,9 +122,34 @@ Mam także doświadczenie w zarządzaniu zespołami programistówi tworzeniu nar
       project1shortDescription: "Strategia turowa inspirowana serią HoMM",
       project1Description: "<h2>Największy projekt zawodowy</h2>\
 <p>Clash 2 jest do tej pory największym projektem, przy którym miałem okazję pracować. \
-Pełniłem w nim rolę gównego programisty. \
-Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. \
-Sequi nulla at esse enim cum deserunt eius.</p>",
+W projekcie pełniłem rolę lidera zespołu programistów, odpowiadając za stworzenie architektury całej gry.</p>\
+<p>Opracowałem edytor map przeznaczony dla zespołu projektantów, wraz ze stworzonym przy użyciu Shader Graph shadere﻿m terenu. \
+Odpowiadałem za optymalizację zużycia pamięci, wykorzystując do tego narzędzia Profiler i Memory Profiler, a także system Addressables do efektywnego ładowania zasobów.</p>\
+<p>Zaprojektowałem system zarządzania jednostkami oparty na wzorcu polecenia oraz system umiejętności jednostek wykorzystujący wzorzec Flyweight. \
+Dodatkowo stworzyłem system zarządzania oknami interfejsu użytkownika wraz z ich animacjami, korzystając z biblioteki DOTween.</p>",
+      project2shortDescription: "Gra mobilna o skokach narciarskich",
+      project2Description: "<h2>Początki pracy zawodowej</h2>\
+<p>Pierwszym projektem przy którym miałem okazję pracować zawodowo była gra Ski Jump Challenge. \
+Jako stażysta otrzymałem zadanie implementacji elementów UI według wytycznych od projektanta.</p>\
+Współpracowałem z zespołami programistów, grafików i projektantów, co pozwoliło mi zdobyć doświadczenie w pracy zespołowej.</p>",
+      project3shortDescription: "Port gry planszowej na Nintendo Switch",
+      project3Description: "<h2>Pierwszy port na platformę Nintendo Switch</h2>\
+<p></p>",
+      project4shortDescription: "Port gry platformowej na Nintendo Switch",
+      project4Description: "<h2>Kolejny port na Nintendo Switch</h2>\
+<p></p>",
+      project5shortDescription: "Port gry mobilnej na Nintendo Switch",
+      project5Description: "<h2>Kolejny port na Nintendo Switch</h2>\
+<p></p>",
+      project6shortDescription: "Gra mobilna",
+      project6Description: "<h2>Początki pracy zawodowej</h2>\
+<p>Zaczynając pracę w firmie PrimeBit Games, otrzymałem zadania poprawienia błędów w grze Inside Grass. \
+Pozwoliło mi to rozwinąć moje umiejętności debugowania. \</p>",
+      project7shortDescription: "Zestaw gier VR współpracujących ze sprzętem fitness",
+      project7Description: "<h2>Doświadczenie z VR</h2>\
+<p>Doświadczenie w tworzeniu aplikacji VR zdobyłem pracując nad zestawem gier przygotowanych dla właściciela sieci siłowni.\
+Projekt był realizowany z myślą o goglach Samsung Gear VR, współpracujących z telefonami Samsung Galaxy S6, co wiązało się z istotnymi ograniczeniami sprzętowymi.</p>\
+<p>Praca nad tymi grami pozwoliła mi nie tylko zrozumieć specyfikę projektowania dla wirtualnej rzeczywistości, ale również pogłębić umiejętności w zakresie optymalizacji wydajności gier.</p>" ,
       // Add more keys...
     }
   };

@@ -77,11 +77,11 @@ window.projectsData =
       platform: "Androi, iOS",
       genre: "adventure",
       slides: [
-        { type: "video", src: "https://www.youtube.com/embed/CjSrx5zOdoY?enablejsapi=1" },
+        { type: "video", src: "https://www.youtube.com/embed/EHuEqfwH4pY?enablejsapi=1" },
         { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_1.jpg" },
         { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_2.jpg" },
         { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_3.jpg" },
-        { type: "image", src: "assets/img/portfolio/CavemanChuck/Screenshot_4.jpg" }
+        { type: "image", src: "assets/img/portfolio/InsideGrass/Screenshot_4.jpg" }
       ]
     },
     project5: 
@@ -96,6 +96,23 @@ window.projectsData =
         { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_1.jpg" },
         { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_2.jpg" },
         { type: "image", src: "assets/img/portfolio/DarkTower/Screenshot_3.jpg" }
+      ]
+    },
+    project7: 
+    {
+      title: "VR Fitness",
+      logo : "assets/img/portfolio/VRFitness/Logo.jpg",
+      url: "",
+      platform: "VR",
+      genre: "fitness",
+      slides: [
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_1.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_2.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_3.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_4.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_5.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_6.jpg" },
+        { type: "image", src: "assets/img/portfolio/VRFitness/Screenshot_7.jpg" }
       ]
     }
     // Add more projects as needed...
