@@ -1,7 +1,7 @@
 ﻿window.translations = {
     en: {
       about: "About me",
-      cvLink: "assets/PiotrSkrzypa_Resume.pdf",
+      cvLink: "assets/PiotrSkrzypa_CV_Unity_Developer_EN.pdf",
       cv: "Resume <i class=\"bi bi-download\"></i>",
       resume: "Resume",
       portfolio: "Portfolio",
@@ -165,7 +165,7 @@ I also have experience in managing teams of programmers and creating development
     },
     pl: {
       about: "O mnie",
-      cvLink: "assets/PiotrSkrzypa_CV.pdf",
+      cvLink: "assets/PiotrSkrzypa_CV_Unity_Developer_PL.pdf",
       cv: "CV <i class=\"bi bi-download\"></i>",
       resume: "Doświadczenie",
       portfolio: "Portfolio",
