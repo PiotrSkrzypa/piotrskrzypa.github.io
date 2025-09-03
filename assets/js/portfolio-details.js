@@ -101,7 +101,7 @@ window.projectsData =
     project7: 
     {
       title: "VR Fitness",
-      logo : "assets/img/portfolio/VRFitness/Logo.jpg",
+      logo : "assets/img/portfolio/VRFitness/Logo.JPG",
       url: "",
       platform: "VR",
       genre: "fitness",
