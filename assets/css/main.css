@@ -17,14 +17,17 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0078ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  --default-color: #4e4e4e;
+  --heading-color: #0a090f;
+  --accent-color: #0078ff;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+  --skill-bg-color: #f0f4f8;
+  --skill-shadow-color: rgba(163, 177, 198, 0.5);
+  --skill-highlight-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -94,6 +97,26 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+}
+
+/* Neumorphic Skill Items */
+.skill-item {
+  background: var(--skill-bg-color);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: 
+    8px 8px 16px var(--skill-shadow-color),
+    -8px -8px 16px var(--skill-highlight-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    10px 10px 20px var(--skill-shadow-color),
+    -10px -10px 20px var(--skill-highlight-color);
 }
 
 /* PHP Email Form Messages
