@@ -269,7 +269,7 @@
       const firstImage = project.slides.find(s => s.type === "image")?.src || "assets/img/placeholder.jpg";
 
       div.innerHTML = `
-            <img src="${project.logo}" class="img-fluid" alt="">
+            <img src="${project.logo}" class="img-fluid" alt="" style="border-radius: 15px;">
               <div class="portfolio-info">
                 <h4>${project.title}</h4>
                 <p data-key="${id}shortDescription"></p>
